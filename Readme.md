@@ -1,12 +1,12 @@
 ## Add Migrations
 ```sh
-cd Smartlog.TransportExchange.Domain 
+cd Domain 
 dotnet ef --startup-project ../Tmusic/ migrations add InitialCreate --context MainDbContext
 ```
 
 ## Update Migrations
 ```sh
-cd Smartlog.TransportExchange.Domain 
+cd Domain 
 dotnet ef --startup-project ../Tmusic/ database update --context MainDbContext
 ```
 ## RollBack Migration
