@@ -417,6 +417,16 @@
             "rid": "win"
           }
         }
+      },
+      "Tmusic.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Tmusic.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Tmusic.Domain.dll": {}
+        }
       }
     }
   },
@@ -1163,6 +1173,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Tmusic.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Tmusic.Domain/Tmusic.Domain.csproj",
+      "msbuildProject": "../Tmusic.Domain/Tmusic.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1173,7 +1188,8 @@
       "Microsoft.EntityFrameworkCore.Design >= 6.0.8",
       "Microsoft.IdentityModel.Tokens >= 6.22.1",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 6.0.6",
-      "System.IdentityModel.Tokens.Jwt >= 6.22.1"
+      "System.IdentityModel.Tokens.Jwt >= 6.22.1",
+      "Tmusic.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1202,7 +1218,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Public\\source\\repos\\Tmusic\\Tmusic.Domain\\Tmusic.Domain.csproj": {
+              "projectPath": "C:\\Users\\Public\\source\\repos\\Tmusic\\Tmusic.Domain\\Tmusic.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

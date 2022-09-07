@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using System.Linq;
-
+using Tmusic.Domain;
 
 namespace Domain.EfCore
 {

@@ -1,0 +1,15 @@
+C:\Users\Public\source\repos\Tmusic\Infrastructure.Authorization\bin\Debug\net6.0\Infrastructure.Authorization.deps.json
+C:\Users\Public\source\repos\Tmusic\Infrastructure.Authorization\bin\Debug\net6.0\Infrastructure.Authorization.dll
+C:\Users\Public\source\repos\Tmusic\Infrastructure.Authorization\bin\Debug\net6.0\Infrastructure.Authorization.pdb
+C:\Users\Public\source\repos\Tmusic\Infrastructure.Authorization\bin\Debug\net6.0\Tmusic.Domain.dll
+C:\Users\Public\source\repos\Tmusic\Infrastructure.Authorization\bin\Debug\net6.0\Tmusic.Domain.pdb
+C:\Users\Public\source\repos\Tmusic\Infrastructure.Authorization\obj\Debug\net6.0\Infrastructure.Authorization.csproj.AssemblyReference.cache
+C:\Users\Public\source\repos\Tmusic\Infrastructure.Authorization\obj\Debug\net6.0\Infrastructure.Authorization.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Public\source\repos\Tmusic\Infrastructure.Authorization\obj\Debug\net6.0\Infrastructure.Authorization.AssemblyInfoInputs.cache
+C:\Users\Public\source\repos\Tmusic\Infrastructure.Authorization\obj\Debug\net6.0\Infrastructure.Authorization.AssemblyInfo.cs
+C:\Users\Public\source\repos\Tmusic\Infrastructure.Authorization\obj\Debug\net6.0\Infrastructure.Authorization.csproj.CoreCompileInputs.cache
+C:\Users\Public\source\repos\Tmusic\Infrastructure.Authorization\obj\Debug\net6.0\Infrastructure.Authorization.csproj.CopyComplete
+C:\Users\Public\source\repos\Tmusic\Infrastructure.Authorization\obj\Debug\net6.0\Infrastructure.Authorization.dll
+C:\Users\Public\source\repos\Tmusic\Infrastructure.Authorization\obj\Debug\net6.0\refint\Infrastructure.Authorization.dll
+C:\Users\Public\source\repos\Tmusic\Infrastructure.Authorization\obj\Debug\net6.0\Infrastructure.Authorization.pdb
+C:\Users\Public\source\repos\Tmusic\Infrastructure.Authorization\obj\Debug\net6.0\ref\Infrastructure.Authorization.dll

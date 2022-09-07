@@ -50,3 +50,13 @@ C:\Users\Public\source\repos\Tmusic\Tmusic\bin\Debug\net6.0\AWSSDK.Core.dll
 C:\Users\Public\source\repos\Tmusic\Tmusic\bin\Debug\net6.0\FluentValidation.dll
 C:\Users\Public\source\repos\Tmusic\Tmusic\bin\Debug\net6.0\Application.dll
 C:\Users\Public\source\repos\Tmusic\Tmusic\bin\Debug\net6.0\Application.pdb
+C:\Users\Public\source\repos\Tmusic\Tmusic\bin\Debug\net6.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Public\source\repos\Tmusic\Tmusic\bin\Debug\net6.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Public\source\repos\Tmusic\Tmusic\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Public\source\repos\Tmusic\Tmusic\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Public\source\repos\Tmusic\Tmusic\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Public\source\repos\Tmusic\Tmusic\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Public\source\repos\Tmusic\Tmusic\bin\Debug\net6.0\Infrastructure.Authorization.dll
+C:\Users\Public\source\repos\Tmusic\Tmusic\bin\Debug\net6.0\Tmusic.Domain.dll
+C:\Users\Public\source\repos\Tmusic\Tmusic\bin\Debug\net6.0\Infrastructure.Authorization.pdb
+C:\Users\Public\source\repos\Tmusic\Tmusic\bin\Debug\net6.0\Tmusic.Domain.pdb

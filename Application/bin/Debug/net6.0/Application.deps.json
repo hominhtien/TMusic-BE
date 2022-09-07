@@ -9,6 +9,7 @@
       "Application/1.0.0": {
         "dependencies": {
           "AWSSDK.Core": "3.7.12.27",
+          "Domain": "1.0.0",
           "FluentValidation": "11.2.1",
           "MediatR": "10.0.1",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.8",
@@ -294,7 +295,26 @@
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
-      "System.Security.Cryptography.Cng/4.5.0": {}
+      "System.Security.Cryptography.Cng/4.5.0": {},
+      "Domain/1.0.0": {
+        "dependencies": {
+          "MediatR": "10.0.1",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.8",
+          "Microsoft.EntityFrameworkCore": "6.0.8",
+          "Microsoft.IdentityModel.Tokens": "6.22.1",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.6",
+          "System.IdentityModel.Tokens.Jwt": "6.22.1",
+          "Tmusic.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Domain.dll": {}
+        }
+      },
+      "Tmusic.Domain/1.0.0": {
+        "runtime": {
+          "Tmusic.Domain.dll": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -540,6 +560,16 @@
       "sha512": "sha512-WG3r7EyjUe9CMPFSs6bty5doUqT+q9pbI80hlNzo2SkPkZ4VTuZkGWjpp77JB8+uaL4DFPRdBsAY+DX3dBK92A==",
       "path": "system.security.cryptography.cng/4.5.0",
       "hashPath": "system.security.cryptography.cng.4.5.0.nupkg.sha512"
+    },
+    "Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Tmusic.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

@@ -1,8 +1,12 @@
+using Application.Common;
+using Application.Services;
+using Infrastructure.Authorization;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Tmusic.Domain;
 using TMusic.Service.Domain;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -57,6 +61,9 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
                     };
                 });
+builder.Services.AddScoped<TokenService>();
+builder.Services.AddCustomAuthentication();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

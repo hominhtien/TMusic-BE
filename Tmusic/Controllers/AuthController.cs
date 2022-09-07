@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Tmusic.Controllers
 {
-
     [ApiController]
     [Route("api/[controller]")]
     public class AuthController : ControllerBase
@@ -16,8 +15,15 @@ namespace Tmusic.Controllers
             _mediator = mediator;
         }
 
-        [HttpPost]
+        [HttpPost("login")]
         public async Task<IActionResult> Login(LoginCommand loginCommand, CancellationToken cancellationToken)
+        {
+            var res = await _mediator.Send(loginCommand, cancellationToken);
+            return Ok(res);
+            
+        }
+        [HttpPost("register")]
+        public async Task<IActionResult> Register(RegisterCommand loginCommand, CancellationToken cancellationToken)
         {
             var res = await _mediator.Send(loginCommand, cancellationToken);
             return Ok(res);

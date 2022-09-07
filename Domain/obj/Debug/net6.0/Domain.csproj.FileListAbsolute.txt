@@ -12,3 +12,6 @@ C:\Users\Public\source\repos\Tmusic\Domain\obj\Debug\net6.0\refint\Domain.dll
 C:\Users\Public\source\repos\Tmusic\Domain\obj\Debug\net6.0\Domain.pdb
 C:\Users\Public\source\repos\Tmusic\Domain\obj\Debug\net6.0\Domain.genruntimeconfig.cache
 C:\Users\Public\source\repos\Tmusic\Domain\obj\Debug\net6.0\ref\Domain.dll
+C:\Users\Public\source\repos\Tmusic\Domain\bin\Debug\net6.0\Tmusic.Domain.dll
+C:\Users\Public\source\repos\Tmusic\Domain\bin\Debug\net6.0\Tmusic.Domain.pdb
+C:\Users\Public\source\repos\Tmusic\Domain\obj\Debug\net6.0\Domain.csproj.CopyComplete

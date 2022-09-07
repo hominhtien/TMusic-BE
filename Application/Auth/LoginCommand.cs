@@ -1,46 +1,40 @@
 ﻿using Amazon.Runtime.Internal;
 using FluentValidation;
 using MediatR;
-using Microsoft.Extensions.Configuration;
-using Microsoft.IdentityModel.Tokens;
-using System;
-using System.Collections.Generic;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
+using Microsoft.EntityFrameworkCore;
 using System.Text;
+using TMusic.Service.Domain;
+using Tmusic.Extentions;
+using System.Security.Cryptography;
+using Application.Services;
 
 namespace Application.Auth
 {
     internal class LoginHandler : IRequestHandler<LoginCommand, string>
     {
-        private readonly IConfiguration  _configuration;
-
-        public LoginHandler(IConfiguration configuration)
+        private readonly MainDbContext _MainDbContext;
+        private readonly TokenService _tokenService;
+        public LoginHandler(MainDbContext mainDbContext, TokenService tokenService)
         {
-            _configuration = configuration;
+            _MainDbContext = mainDbContext;
+            _tokenService = tokenService;
         }
 
         public async Task<string> Handle(LoginCommand request, CancellationToken cancellationToken)
         {
-            if(request.UserName == "Tien")
-            {
-                var claims = new List<Claim>();
-                claims.Add(new Claim(ClaimTypes.GivenName, "Tien"));
-                claims.Add(new Claim(ClaimTypes.Surname, "Ho"));
-                claims.Add(new Claim(ClaimTypes.Email, "Tien@gmail.com"));
+            var user = await _MainDbContext.Users.Where(x => x.Email == request.UserName).SingleOrDefaultAsync(cancellationToken);
+            if (user is null) throw CoreException.NotFound("User not found");
 
-                var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
-                var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-                var token = new JwtSecurityToken(
-                    _configuration["Jwt:Issuer"],
-                    _configuration["Jwt:Audience"],
-                    claims,
-                    expires: DateTime.UtcNow.AddMinutes(20),
-                    signingCredentials: credentials);
-                var res = new JwtSecurityTokenHandler().WriteToken(token);
-                return res;
+            using var hma = new HMACSHA512(user.PassWordSalt);
+            var computedHash = hma.ComputeHash(Encoding.UTF8.GetBytes(request.Password));
+            for (int i = 0; i < computedHash.Length; i++)
+            {
+                if (computedHash[i] != user.PassWordHash[i])
+                {
+                    throw CoreException.Exception("Mật khẩu không chính xác");
+                }
             }
-            return "";
+            return _tokenService.GetToken(user);
         }
     }
     public record LoginCommand : IRequest<string>

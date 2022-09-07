@@ -8,12 +8,13 @@ namespace Domain.Model
     public class User : AuditedEntity<Guid>
     {
         public bool Verified { get; set; }
-        public string PassWord { get; set; }
+        public byte[] PassWordHash { get; set; }
+        public byte[] PassWordSalt { get; set; }
         public string Email { get; set; }
         public string FullName { get; set; }
 
         public string Description { get; set; }
-        public string DateOfBirth { get; set; }
+        public DateTime DateOfBirth { get; set; }
 
         public string Avatar { get; set; }
 
@@ -37,6 +38,9 @@ namespace Domain.Model
             builder.HasIndex(x => x.FullName);
             builder.HasQueryFilter(x => x.Enable == true);
             builder.HasQueryFilter(x => x.Active == true);
+            builder.Property(x => x.PassWordHash).IsRequired();
+            builder.Property(x => x.PassWordSalt).IsRequired();
+            builder.Property(x => x.Email).IsRequired();
         }
     }
 }
